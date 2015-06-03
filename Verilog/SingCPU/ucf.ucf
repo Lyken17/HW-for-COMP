@@ -1,0 +1,36 @@
+NET "led0" LOC="k12";
+NET "led1" LOC="p14";
+NET "led2" LOC="l12";
+NET "led3" LOC="n14";
+NET "led4" LOC="p13";
+NET "button[0]" CLOCK_DEDICATED_ROUTE = FALSE; 
+NET "iclk" LOC="t9";
+
+NET "button[0]"	     LOC = "M13";
+NET "button[1]"      LOC = "M14";
+NET "button[2]"	     LOC = "L13";
+NET "button[3]"	     LOC = "L14";
+
+
+NET "anode[0]" LOC="d14";
+NET "anode[1]" LOC="g14";
+NET "anode[2]" LOC="f14";
+NET "anode[3]" LOC="e13";
+
+NET "segment[0]" LOC="e14";
+NET "segment[1]" LOC="g13";
+NET "segment[2]" LOC="n15";
+NET "segment[3]" LOC="p15";
+NET "segment[4]" LOC="r16";
+NET "segment[5]" LOC="f13";
+NET "segment[6]" LOC="n16";
+NET "segment[7]" LOC="p16";
+
+NET "switch[0]" LOC="f12";
+NET "switch[1]" LOC="g12";
+NET "switch[2]" LOC="h14";
+NET "switch[3]" LOC="h13";
+NET "switch[4]" LOC="j14";
+NET "switch[5]" LOC="j13";
+NET "switch[6]" LOC="k14";
+NET "switch[7]" LOC="k13";

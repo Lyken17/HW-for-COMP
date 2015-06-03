@@ -1,0 +1,12 @@
+# Output products list for <InstructionMem>
+InstructionMem.asy
+InstructionMem.mif
+InstructionMem.ngc
+InstructionMem.sym
+InstructionMem.v
+InstructionMem.veo
+InstructionMem.vhd
+InstructionMem.vho
+InstructionMem.xco
+InstructionMem_flist.txt
+InstructionMem_xmdf.tcl

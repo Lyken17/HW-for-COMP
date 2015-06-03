@@ -1,0 +1,3 @@
+Device 0 options are:
+Row 0 => Verify	,FALSERow 21 ===== FPGA Device Specific Programming Properties =====,
+Row 22 => Pulse PROG	,FALSE

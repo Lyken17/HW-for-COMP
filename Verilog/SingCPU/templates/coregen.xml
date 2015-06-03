@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="InstructionMem" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+InstructionMem YourInstanceName (
+    .addr(addr), // Bus [6 : 0] 
+    .clk(clk),
+    .dout(dout)); // Bus [31 : 0] 
+
+ 
+		</Template>
+		<Template label="Memory" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+Memory YourInstanceName (
+    .addr(addr), // Bus [6 : 0] 
+    .clk(clk),
+    .din(din), // Bus [31 : 0] 
+    .dout(dout), // Bus [31 : 0] 
+    .we(we));
+
+ 
+		</Template>
+		<Template label="asd" treetype="template">
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="InstructionMem" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component InstructionMem
+    port (
+    addr: IN std_logic_VECTOR(6 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(31 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : InstructionMem
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout);
+ 
+		</Template>
+		<Template label="Memory" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component Memory
+    port (
+    addr: IN std_logic_VECTOR(6 downto 0);
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(31 downto 0);
+    dout: OUT std_logic_VECTOR(31 downto 0);
+    we: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : Memory
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            din =&gt; din,
+            dout =&gt; dout,
+            we =&gt; we);
+ 
+		</Template>
+		<Template label="asd" treetype="template">
+		</Template>
+	</Folder>
+</RootFolder>

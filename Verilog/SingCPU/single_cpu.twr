@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+D:/3130104385/Rtype/SingCPU/SingCPU.ise -intstyle ise -e 3 -s 4 -xml single_cpu
+single_cpu.ncd -o single_cpu.twr single_cpu.pcf -ucf ucf.ucf
+
+Design file:              single_cpu.ncd
+Physical constraint file: single_cpu.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock iclk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+button<0>   |    3.813(R)|    0.865(R)|clk               |   0.000|
+button<1>   |    4.040(R)|    0.911(R)|clk               |   0.000|
+button<2>   |    4.163(R)|    1.147(R)|clk               |   0.000|
+button<3>   |    4.522(R)|    1.196(R)|clk               |   0.000|
+switch<0>   |   18.037(R)|   -2.199(R)|clk               |   0.000|
+switch<1>   |   10.604(R)|   -2.281(R)|clk               |   0.000|
+switch<2>   |    9.489(R)|   -1.870(R)|clk               |   0.000|
+switch<3>   |   10.079(R)|   -1.707(R)|clk               |   0.000|
+switch<4>   |   11.426(R)|   -1.632(R)|clk               |   0.000|
+switch<6>   |    4.253(R)|   -0.925(R)|clk               |   0.000|
+switch<7>   |    4.137(R)|   -0.943(R)|clk               |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock iclk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+anode<0>    |    8.378(R)|clk               |   0.000|
+anode<1>    |    8.379(R)|clk               |   0.000|
+anode<2>    |    9.100(R)|clk               |   0.000|
+anode<3>    |    9.434(R)|clk               |   0.000|
+segment<0>  |   10.335(R)|clk               |   0.000|
+segment<1>  |    9.601(R)|clk               |   0.000|
+segment<2>  |    9.601(R)|clk               |   0.000|
+segment<3>  |    9.820(R)|clk               |   0.000|
+segment<4>  |   10.842(R)|clk               |   0.000|
+segment<5>  |   10.106(R)|clk               |   0.000|
+segment<6>  |    9.320(R)|clk               |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock iclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iclk           |   18.359|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu May 28 11:40:53 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 140 MB
+
+
+

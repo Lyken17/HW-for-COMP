@@ -1,0 +1,178 @@
+Release 10.1 par K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+ROOM509-16::  Thu May 28 11:39:38 2015
+
+par -w -intstyle ise -ol std -t 1 single_cpu_map.ncd single_cpu.ncd
+single_cpu.pcf 
+
+
+Constraints file: single_cpu.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+   "single_cpu" is an NCD, version 3.2, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.39 2008-01-09".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        2 out of 8      25%
+   Number of External IOBs                  29 out of 173    16%
+      Number of LOCed IOBs                  29 out of 29    100%
+
+   Number of RAMB16s                         2 out of 12     16%
+   Number of Slices                       1514 out of 1920   78%
+      Number of SLICEMs                    392 out of 960    40%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98d0ff) REAL time: 2 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 2 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 2 secs 
+
+Phase 4.2
+
+.
+Phase 4.2 (Checksum:26259fc) REAL time: 3 secs 
+
+Phase 5.8
+........................................
+.......
+.......................
+...
+..........................
+Phase 5.8 (Checksum:bcb1f9) REAL time: 15 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 15 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 21 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 21 secs 
+
+REAL time consumed by placer: 21 secs 
+CPU  time consumed by placer: 21 secs 
+Writing design to file single_cpu.ncd
+
+
+Total REAL time to Placer completion: 21 secs 
+Total CPU time to Placer completion: 21 secs 
+
+Starting Router
+
+Phase 1: 9597 unrouted;       REAL time: 23 secs 
+
+Phase 2: 8946 unrouted;       REAL time: 23 secs 
+
+Phase 3: 4151 unrouted;       REAL time: 25 secs 
+
+Phase 4: 4151 unrouted; (11241)      REAL time: 25 secs 
+
+Phase 5: 4154 unrouted; (0)      REAL time: 27 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 31 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 32 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 36 secs 
+
+
+Total REAL time to Router completion: 39 secs 
+Total CPU time to Router completion: 37 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|                 clk |      BUFGMUX0| No   |   40 |  0.002     |  1.012      |
++---------------------+--------------+------+------+------------+-------------+
+|anti_jitter/button_o |              |      |      |            |             |
+|               ut<0> |      BUFGMUX2| No   |  532 |  0.006     |  1.016      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP   |         N/A|    18.359ns|     N/A|           0
+                                            | HOLD    |     0.979ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ant | SETUP   |         N/A|    44.026ns|     N/A|           0
+  i_jitter/button_out<0>                    | HOLD    |     0.985ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 7 secs 
+Total CPU time to PAR completion: 1 mins 2 secs 
+
+Peak Memory Usage:  203 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 2
+
+Writing design to file single_cpu.ncd
+
+
+
+PAR done!

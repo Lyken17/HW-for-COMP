@@ -1,0 +1,345 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'single_cpu'
+
+Design Information
+------------------
+Command Line   : map -ise D:/3130104385/Rtype/SingCPU/SingCPU.ise -intstyle ise
+-p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o single_cpu_map.ncd
+single_cpu.ngd single_cpu.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.46 $
+Mapped Date    : Thu May 28 11:39:25 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:         1,118 out of   3,840   29%
+  Number of 4 input LUTs:             1,879 out of   3,840   48%
+Logic Distribution:
+  Number of occupied Slices:          1,514 out of   1,920   78%
+    Number of Slices containing only related logic:   1,514 out of   1,514 100%
+    Number of Slices containing unrelated logic:          0 out of   1,514   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,945 out of   3,840   50%
+    Number used as logic:             1,879
+    Number used as a route-thru:         66
+  Number of bonded IOBs:                 29 out of     173   16%
+  Number of RAMB16s:                      2 out of      12   16%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Peak Memory Usage:  181 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:243 - Logical network switch<5> has no load.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  62 block(s) removed
+   6 block(s) optimized away
+  62 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "alu/Mmux_result_5" is unused and has been removed.
+ Unused block "alu/result_nor<0>1" (ROM) removed.
+The signal "alu/Mmux_result_510" is unused and has been removed.
+ Unused block "alu/Mmux_result_5101" (ROM) removed.
+The signal "alu/Mmux_result_512" is unused and has been removed.
+ Unused block "alu/Mmux_result_5121" (ROM) removed.
+The signal "alu/Mmux_result_514" is unused and has been removed.
+ Unused block "alu/Mmux_result_5141" (ROM) removed.
+The signal "alu/Mmux_result_516" is unused and has been removed.
+ Unused block "alu/Mmux_result_5161" (ROM) removed.
+The signal "alu/Mmux_result_518" is unused and has been removed.
+ Unused block "alu/Mmux_result_5181" (ROM) removed.
+The signal "alu/Mmux_result_52" is unused and has been removed.
+ Unused block "alu/Mmux_result_5210" (ROM) removed.
+The signal "alu/Mmux_result_520" is unused and has been removed.
+ Unused block "alu/Mmux_result_5201" (ROM) removed.
+The signal "alu/Mmux_result_522" is unused and has been removed.
+ Unused block "alu/Mmux_result_5221" (ROM) removed.
+The signal "alu/Mmux_result_524" is unused and has been removed.
+ Unused block "alu/Mmux_result_5241" (ROM) removed.
+The signal "alu/Mmux_result_526" is unused and has been removed.
+ Unused block "alu/Mmux_result_5261" (ROM) removed.
+The signal "alu/Mmux_result_528" is unused and has been removed.
+ Unused block "alu/Mmux_result_5281" (ROM) removed.
+The signal "alu/Mmux_result_530" is unused and has been removed.
+ Unused block "alu/Mmux_result_5301" (ROM) removed.
+The signal "alu/Mmux_result_532" is unused and has been removed.
+ Unused block "alu/Mmux_result_5321" (ROM) removed.
+The signal "alu/Mmux_result_534" is unused and has been removed.
+ Unused block "alu/Mmux_result_5341" (ROM) removed.
+The signal "alu/Mmux_result_536" is unused and has been removed.
+ Unused block "alu/Mmux_result_5361" (ROM) removed.
+The signal "alu/Mmux_result_538" is unused and has been removed.
+ Unused block "alu/Mmux_result_5381" (ROM) removed.
+The signal "alu/Mmux_result_54" is unused and has been removed.
+ Unused block "alu/Mmux_result_5410" (ROM) removed.
+The signal "alu/Mmux_result_540" is unused and has been removed.
+ Unused block "alu/Mmux_result_5401" (ROM) removed.
+The signal "alu/Mmux_result_542" is unused and has been removed.
+ Unused block "alu/Mmux_result_5421" (ROM) removed.
+The signal "alu/Mmux_result_544" is unused and has been removed.
+ Unused block "alu/Mmux_result_5441" (ROM) removed.
+The signal "alu/Mmux_result_546" is unused and has been removed.
+ Unused block "alu/Mmux_result_5461" (ROM) removed.
+The signal "alu/Mmux_result_548" is unused and has been removed.
+ Unused block "alu/Mmux_result_5481" (ROM) removed.
+The signal "alu/Mmux_result_550" is unused and has been removed.
+ Unused block "alu/Mmux_result_5501" (ROM) removed.
+The signal "alu/Mmux_result_552" is unused and has been removed.
+ Unused block "alu/Mmux_result_5521" (ROM) removed.
+The signal "alu/Mmux_result_554" is unused and has been removed.
+ Unused block "alu/Mmux_result_5541" (ROM) removed.
+The signal "alu/Mmux_result_556" is unused and has been removed.
+ Unused block "alu/Mmux_result_5561" (ROM) removed.
+The signal "alu/Mmux_result_558" is unused and has been removed.
+ Unused block "alu/Mmux_result_5581" (ROM) removed.
+The signal "alu/Mmux_result_56" is unused and has been removed.
+ Unused block "alu/Mmux_result_562" (ROM) removed.
+The signal "alu/Mmux_result_560" is unused and has been removed.
+ Unused block "alu/Mmux_result_5601" (ROM) removed.
+The signal "alu/Mmux_result_58" is unused and has been removed.
+ Unused block "alu/Mmux_result_581" (ROM) removed.
+The signal "alu/Mmux_result_6" is unused and has been removed.
+ Unused block "alu/result_and<0>1" (ROM) removed.
+The signal "alu/Mmux_result_61" is unused and has been removed.
+ Unused block "alu/Mmux_result_6110" (ROM) removed.
+The signal "alu/Mmux_result_610" is unused and has been removed.
+ Unused block "alu/Mmux_result_6101" (ROM) removed.
+The signal "alu/Mmux_result_611" is unused and has been removed.
+ Unused block "alu/Mmux_result_6111" (ROM) removed.
+The signal "alu/Mmux_result_612" is unused and has been removed.
+ Unused block "alu/Mmux_result_6121" (ROM) removed.
+The signal "alu/Mmux_result_613" is unused and has been removed.
+ Unused block "alu/Mmux_result_6131" (ROM) removed.
+The signal "alu/Mmux_result_614" is unused and has been removed.
+ Unused block "alu/Mmux_result_6141" (ROM) removed.
+The signal "alu/Mmux_result_615" is unused and has been removed.
+ Unused block "alu/Mmux_result_6151" (ROM) removed.
+The signal "alu/Mmux_result_616" is unused and has been removed.
+ Unused block "alu/Mmux_result_6161" (ROM) removed.
+The signal "alu/Mmux_result_617" is unused and has been removed.
+ Unused block "alu/Mmux_result_6171" (ROM) removed.
+The signal "alu/Mmux_result_618" is unused and has been removed.
+ Unused block "alu/Mmux_result_6181" (ROM) removed.
+The signal "alu/Mmux_result_619" is unused and has been removed.
+ Unused block "alu/Mmux_result_6191" (ROM) removed.
+The signal "alu/Mmux_result_62" is unused and has been removed.
+ Unused block "alu/Mmux_result_6210" (ROM) removed.
+The signal "alu/Mmux_result_620" is unused and has been removed.
+ Unused block "alu/Mmux_result_6201" (ROM) removed.
+The signal "alu/Mmux_result_621" is unused and has been removed.
+ Unused block "alu/Mmux_result_6211" (ROM) removed.
+The signal "alu/Mmux_result_622" is unused and has been removed.
+ Unused block "alu/Mmux_result_6221" (ROM) removed.
+The signal "alu/Mmux_result_623" is unused and has been removed.
+ Unused block "alu/Mmux_result_6231" (ROM) removed.
+The signal "alu/Mmux_result_625" is unused and has been removed.
+ Unused block "alu/Mmux_result_6251" (ROM) removed.
+The signal "alu/Mmux_result_626" is unused and has been removed.
+ Unused block "alu/Mmux_result_6261" (ROM) removed.
+The signal "alu/Mmux_result_627" is unused and has been removed.
+ Unused block "alu/Mmux_result_6271" (ROM) removed.
+The signal "alu/Mmux_result_628" is unused and has been removed.
+ Unused block "alu/Mmux_result_6281" (ROM) removed.
+The signal "alu/Mmux_result_629" is unused and has been removed.
+ Unused block "alu/Mmux_result_6291" (ROM) removed.
+The signal "alu/Mmux_result_63" is unused and has been removed.
+ Unused block "alu/Mmux_result_632" (ROM) removed.
+The signal "alu/Mmux_result_630" is unused and has been removed.
+ Unused block "alu/Mmux_result_6301" (ROM) removed.
+The signal "alu/Mmux_result_631" is unused and has been removed.
+ Unused block "alu/Mmux_result_6311" (ROM) removed.
+The signal "alu/Mmux_result_64" is unused and has been removed.
+ Unused block "alu/Mmux_result_641" (ROM) removed.
+The signal "alu/Mmux_result_65" is unused and has been removed.
+ Unused block "alu/Mmux_result_651" (ROM) removed.
+The signal "alu/Mmux_result_66" is unused and has been removed.
+ Unused block "alu/Mmux_result_661" (ROM) removed.
+The signal "alu/Mmux_result_67" is unused and has been removed.
+ Unused block "alu/Mmux_result_671" (ROM) removed.
+The signal "alu/Mmux_result_68" is unused and has been removed.
+ Unused block "alu/Mmux_result_681" (ROM) removed.
+The signal "alu/Mmux_result_69" is unused and has been removed.
+ Unused block "alu/Mmux_result_691" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		m/GND
+VCC 		m/VCC
+GND 		m2/GND
+VCC 		m2/VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| anode<0>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<1>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<2>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<3>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| button<0>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<1>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<2>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<3>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| iclk                               | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| led0                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led1                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led2                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led3                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led4                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<0>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<1>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<2>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<3>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<4>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<5>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<6>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<7>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| switch<0>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<1>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<2>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<3>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<4>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<6>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<7>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| single_cpu/        |           | 77/1558       | 47/1118       | 126/1945      | 0/0           | 0/2       | 0/0       | 1/2   | 0/0   | single_cpu             |
+| +RegFile           |           | 1302/1302     | 1024/1024     | 1609/1609     | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/RegFile     |
+| +alu               |           | 100/100       | 0/0           | 130/130       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/alu         |
+| +anti_jitter       |           | 29/29         | 38/38         | 16/16         | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | single_cpu/anti_jitter |
+| +branch            |           | 6/6           | 0/0           | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/branch      |
+| +c                 |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/c           |
+| +cALUsrc           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/cALUsrc     |
+| +cMemtoReg         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/cMemtoReg   |
+| +cRegDst           |           | 4/4           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/cRegDst     |
+| +ctrl              |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/ctrl        |
+| +jump              |           | 9/9           | 0/0           | 18/18         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/jump        |
+| +m                 |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | single_cpu/m           |
+| +m2                |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | single_cpu/m2          |
+| +pc_4              |           | 9/9           | 0/0           | 14/14         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/pc_4        |
+| +pc_reg            |           | 15/15         | 9/9           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | single_cpu/pc_reg      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

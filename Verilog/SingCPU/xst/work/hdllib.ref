@@ -1,0 +1,13 @@
+MO single_signext NULL single_signext.v vlg7F/single__signext.bin 1432784328
+MO InstructionMem NULL ./InstructionMem.v vlg0D/_instruction_mem.bin 1432784328
+MO single_pc NULL single_pc.v vlg10/single__pc.bin 1432784328
+MO single_add NULL single_add.v vlg42/single__add.bin 1432784328
+MO single_mux NULL single_mux.v vlg57/single__mux.bin 1432784328
+MO Memory NULL ./Memory.v vlg49/_memory.bin 1432784328
+MO single_ALU NULL single_ALU.v vlg1B/single___a_l_u.bin 1432784328
+MO single_gpr NULL single_gpr.v vlg22/single__gpr.bin 1432784328
+MO single_ctrl NULL single_ctrl.v vlg06/single__ctrl.bin 1432784328
+MO anti NULL anti.v vlg48/anti.bin 1432784328
+MO single_pc_plus_4 NULL single_pc_plus_4.v vlg6E/single__pc__plus__4.bin 1432784328
+MO ALUctrl NULL ALUctrl.v vlg5B/_a_l_uctrl.bin 1432784328
+MO single_cpu NULL single_cpu.v vlg41/single__cpu.bin 1432784328
