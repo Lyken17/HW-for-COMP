@@ -1,0 +1,12 @@
+# Output products list for <Memory>
+Memory.asy
+Memory.mif
+Memory.ngc
+Memory.sym
+Memory.v
+Memory.veo
+Memory.vhd
+Memory.vho
+Memory.xco
+Memory_flist.txt
+Memory_xmdf.tcl

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    12:07:09 05/28/2015 
+// Create Date:    10:50:35 06/10/2015 
 // Design Name: 
-// Module Name:    alu 
+// Module Name:    reg_32_bit 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,17 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module alu(in_A,in_B,alu_ctl,res
+module reg_32_bit(clk,data_in,data_out
     );
-input [31:0] in_A,in_B;
-input [1:0] alu_ctl;
-output reg [31:0] res;
-always @(alu_ctl or in_A or in_B)
-	case(alu_ctl)
-		2'b00 :res=in_A+in_B;
-		2'b01 :res=in_A-in_B;
-		2'b11 :res=in_A&in_B;
-		2'b10 :res=~(in_A|in_B);
-	endcase
+input clk;
+output reg [31:0] data_out;
+input [31:0] data_in;
+
+always @(posedge clk)
+	data_out<=data_in;
 
 endmodule
+

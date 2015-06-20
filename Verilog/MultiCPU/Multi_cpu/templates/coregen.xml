@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="Memory" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+Memory YourInstanceName (
+    .A(A), // Bus [6 : 0] 
+    .CLK(CLK),
+    .D(D), // Bus [31 : 0] 
+    .WE(WE),
+    .SPO(SPO)); // Bus [31 : 0] 
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="Memory" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component Memory
+    port (
+    A: IN std_logic_VECTOR(6 downto 0);
+    CLK: IN std_logic;
+    D: IN std_logic_VECTOR(31 downto 0);
+    WE: IN std_logic;
+    SPO: OUT std_logic_VECTOR(31 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : Memory
+        port map (
+            A =&gt; A,
+            CLK =&gt; CLK,
+            D =&gt; D,
+            WE =&gt; WE,
+            SPO =&gt; SPO);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

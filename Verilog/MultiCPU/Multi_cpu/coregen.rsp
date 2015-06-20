@@ -1,0 +1,10 @@
+NEWPROJECT "C:/Users/student/Desktop/Multi_cpu/Multi_cpu/"
+SETPROJECT "C:/Users/student/Desktop/Multi_cpu/Multi_cpu/"
+SET BusFormat = BusFormatAngleBracketNotRipped
+SET devicefamily = spartan3
+SET device = xc3s200
+SET package = ft256
+SET speedgrade = -4
+SET FlowVendor = Foundation_iSE
+SET VerilogSim = True
+SET VHDLSim = True

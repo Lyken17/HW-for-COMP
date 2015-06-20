@@ -1,0 +1,22 @@
+# Date: Thu Jun 18 07:18:34 2015
+
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = Verilog
+SET device = xc3s200
+SET devicefamily = spartan3
+SET flowvendor = Foundation_ISE
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = ft256
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -4
+SET verilogsim = true
+SET vhdlsim = true
+SET workingdirectory = ./tmp/
+
+# CRC: b55cbe06
