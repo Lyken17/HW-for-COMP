@@ -1,4 +1,8 @@
-#Work for lou sir 
+# Homework for course "computer organization and microprocessor"
+
+Implementation of single/multi clock micro cpu.
+
+## Work for lou sir 
 
 I hope i can survive XD :) 
 
