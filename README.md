@@ -1,6 +1,6 @@
-# Homework for course "computer organization and microprocessor"
+# COMP
 
-Implementation of single/multi clock micro cpu.
+This repo is homework for course "computer organization and microprocessor", Zhejiang Univeristy. It includes an implementation of single/multi clock micro cpu.
 
 ## Work for lou sir 
 
